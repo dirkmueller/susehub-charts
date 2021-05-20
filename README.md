@@ -1,0 +1,1 @@
+# susehub-charts
