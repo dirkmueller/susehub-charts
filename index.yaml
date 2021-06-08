@@ -1,0 +1,60 @@
+apiVersion: v1
+entries:
+  mariadb:
+  - apiVersion: v1
+    appVersion: 10.3.22
+    created: "2021-06-08T15:52:55.037065727Z"
+    description: Fast, reliable, scalable, and easy to use open-source relational
+      database system. MariaDB Server is intended for mission-critical, heavy-load
+      production systems as well as for embedding into mass-deployed software. Highly
+      available MariaDB cluster.
+    digest: e15d8015aa77236f84f239d792542e0b75c73a74f8e80baf42111aee3afc61ff
+    home: https://mariadb.org
+    icon: file://../mariadb-stack-220x234.png
+    keywords:
+    - mariadb
+    - mysql
+    - database
+    - sql
+    - prometheus
+    maintainers:
+    - email: containers@bitnami.com
+      name: Bitnami
+    name: mariadb
+    sources:
+    - https://github.com/bitnami/bitnami-docker-mariadb
+    - https://github.com/prometheus/mysqld_exporter
+    urls:
+    - https://dirkmueller.github.io/susehub-charts/mariadb-7.3.14.tgz
+    version: 7.3.14
+  rocketchat:
+  - apiVersion: v1
+    appVersion: 3.6.0
+    created: "2021-06-08T15:52:55.041509635Z"
+    dependencies:
+    - condition: mongodb.enabled
+      name: mongodb
+      repository: https://charts.helm.sh/stable
+      version: 7.x
+    deprecated: true
+    description: DEPRECATED - Prepare to take off with the ultimate chat platform,
+      experience the next level of team communications
+    digest: b4a31776a8625c6105dffda2122ee64eb51c049f1461d3e2ad3c3bd8280908e3
+    home: https://rocket.chat/
+    icon: https://raw.githubusercontent.com/RocketChat/Rocket.Chat.Artwork/master/Logos/icon.svg
+    keywords:
+    - chat
+    - communication
+    - http
+    - web
+    - application
+    - nodejs
+    - javascript
+    - meteor
+    name: rocketchat
+    sources:
+    - https://github.com/RocketChat/Docker.Official.Image/
+    urls:
+    - https://dirkmueller.github.io/susehub-charts/rocketchat-2.0.10.tgz
+    version: 2.0.10
+generated: "2021-06-08T15:52:55.033619421Z"
