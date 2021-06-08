@@ -1,14 +1,49 @@
 apiVersion: v1
 entries:
+  graylog:
+  - apiVersion: v2
+    appVersion: 4.0.6
+    created: "2021-06-08T21:57:34.807673922Z"
+    dependencies:
+    - name: elasticsearch
+      repository: https://charts.helm.sh/stable
+      tags:
+      - install-elasticsearch
+      version: 1.32.2
+    - name: mongodb
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - install-mongodb
+      version: 9.3.1
+    description: Graylog is the centralized log management solution built to open
+      standards for capturing, storing, and enabling real-time analysis of terabytes
+      of machine data.
+    digest: 3306c662053b62baf0f7cda3fc538b3e85cc877f90df71e9e7367d80623cc34e
+    home: https://www.graylog.org
+    icon: https://global-uploads.webflow.com/5a218ef7897bf400019e2f16/5a218ef7897bf400019e2f60_logo-graylog.png
+    keywords:
+    - graylog
+    - logs
+    - syslog
+    - gelf
+    maintainers:
+    - email: goonohc@gmail.com
+      name: KongZ
+    name: graylog
+    sources:
+    - https://github.com/KongZ/charts
+    urls:
+    - https://dirkmueller.github.io/susehub-charts/graylog-1.7.10.tgz
+    version: 1.7.10
   mariadb:
   - apiVersion: v1
     appVersion: 10.3.22
-    created: "2021-06-08T15:52:55.037065727Z"
+    created: "2021-06-08T21:57:34.810370576Z"
     description: Fast, reliable, scalable, and easy to use open-source relational
       database system. MariaDB Server is intended for mission-critical, heavy-load
       production systems as well as for embedding into mass-deployed software. Highly
       available MariaDB cluster.
-    digest: e15d8015aa77236f84f239d792542e0b75c73a74f8e80baf42111aee3afc61ff
+    digest: 7f2117196e788fab96382597d69f60be311b2ddd73b28257d03140736fc17f48
     home: https://mariadb.org
     icon: file://../mariadb-stack-220x234.png
     keywords:
@@ -30,7 +65,7 @@ entries:
   rocketchat:
   - apiVersion: v1
     appVersion: 3.6.0
-    created: "2021-06-08T15:52:55.041509635Z"
+    created: "2021-06-08T21:57:34.815429478Z"
     dependencies:
     - condition: mongodb.enabled
       name: mongodb
@@ -39,7 +74,7 @@ entries:
     deprecated: true
     description: DEPRECATED - Prepare to take off with the ultimate chat platform,
       experience the next level of team communications
-    digest: b4a31776a8625c6105dffda2122ee64eb51c049f1461d3e2ad3c3bd8280908e3
+    digest: bf99320d01adc296f60f32c8fbbadbbfa95306002e9653187146a7bfaf88b321
     home: https://rocket.chat/
     icon: https://raw.githubusercontent.com/RocketChat/Rocket.Chat.Artwork/master/Logos/icon.svg
     keywords:
@@ -57,4 +92,4 @@ entries:
     urls:
     - https://dirkmueller.github.io/susehub-charts/rocketchat-2.0.10.tgz
     version: 2.0.10
-generated: "2021-06-08T15:52:55.033619421Z"
+generated: "2021-06-08T21:57:34.798892444Z"
