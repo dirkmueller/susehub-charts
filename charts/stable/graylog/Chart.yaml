@@ -15,6 +15,10 @@ sources:
 maintainers:
   - name: KongZ
     email: goonohc@gmail.com
+annotations:
+  artifacthub.io/links: |
+    - name: Buy One-Year Support
+      url: https://link1.url
 dependencies:
   - name: elasticsearch
     version: 1.32.2
