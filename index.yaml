@@ -1,9 +1,13 @@
 apiVersion: v1
 entries:
   graylog:
-  - apiVersion: v2
+  - annotations:
+      artifacthub.io/links: |
+        - name: Buy One-Year Support
+          url: https://link1.url
+    apiVersion: v2
     appVersion: 4.0.6
-    created: "2021-06-08T21:57:34.807673922Z"
+    created: "2021-06-10T21:40:16.387640274Z"
     dependencies:
     - name: elasticsearch
       repository: https://charts.helm.sh/stable
@@ -18,7 +22,7 @@ entries:
     description: Graylog is the centralized log management solution built to open
       standards for capturing, storing, and enabling real-time analysis of terabytes
       of machine data.
-    digest: 3306c662053b62baf0f7cda3fc538b3e85cc877f90df71e9e7367d80623cc34e
+    digest: 3212544051d4092b9925b467a850b8fd597c29f7eb2bca5c07ff1219855c5488
     home: https://www.graylog.org
     icon: https://global-uploads.webflow.com/5a218ef7897bf400019e2f16/5a218ef7897bf400019e2f60_logo-graylog.png
     keywords:
@@ -38,12 +42,12 @@ entries:
   mariadb:
   - apiVersion: v1
     appVersion: 10.3.22
-    created: "2021-06-08T21:57:34.810370576Z"
+    created: "2021-06-10T21:40:16.389598891Z"
     description: Fast, reliable, scalable, and easy to use open-source relational
       database system. MariaDB Server is intended for mission-critical, heavy-load
       production systems as well as for embedding into mass-deployed software. Highly
       available MariaDB cluster.
-    digest: 7f2117196e788fab96382597d69f60be311b2ddd73b28257d03140736fc17f48
+    digest: 04bb0b4fcb89f2f2fdcf384ee8d1a9ecf882828a0524ab15414abd1d16571511
     home: https://mariadb.org
     icon: file://../mariadb-stack-220x234.png
     keywords:
@@ -65,7 +69,7 @@ entries:
   rocketchat:
   - apiVersion: v1
     appVersion: 3.6.0
-    created: "2021-06-08T21:57:34.815429478Z"
+    created: "2021-06-10T21:40:16.394821339Z"
     dependencies:
     - condition: mongodb.enabled
       name: mongodb
@@ -74,7 +78,7 @@ entries:
     deprecated: true
     description: DEPRECATED - Prepare to take off with the ultimate chat platform,
       experience the next level of team communications
-    digest: bf99320d01adc296f60f32c8fbbadbbfa95306002e9653187146a7bfaf88b321
+    digest: 5bb2d9c2f590394c910ee5a1d7fb863a150dde32bb773fc22d68cc120ff56f67
     home: https://rocket.chat/
     icon: https://raw.githubusercontent.com/RocketChat/Rocket.Chat.Artwork/master/Logos/icon.svg
     keywords:
@@ -92,4 +96,4 @@ entries:
     urls:
     - https://dirkmueller.github.io/susehub-charts/rocketchat-2.0.10.tgz
     version: 2.0.10
-generated: "2021-06-08T21:57:34.798892444Z"
+generated: "2021-06-10T21:40:16.380561409Z"
