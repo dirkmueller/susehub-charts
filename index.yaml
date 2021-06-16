@@ -7,7 +7,7 @@ entries:
           url: https://link1.url
     apiVersion: v2
     appVersion: 4.0.6
-    created: "2021-06-10T21:40:16.387640274Z"
+    created: "2021-06-16T14:53:52.770198017Z"
     dependencies:
     - name: elasticsearch
       repository: https://charts.helm.sh/stable
@@ -22,7 +22,7 @@ entries:
     description: Graylog is the centralized log management solution built to open
       standards for capturing, storing, and enabling real-time analysis of terabytes
       of machine data.
-    digest: 3212544051d4092b9925b467a850b8fd597c29f7eb2bca5c07ff1219855c5488
+    digest: 7c27d042db10954027af1c5d2976d9771a9934d62b32b9df54d2c08e389ecd5b
     home: https://www.graylog.org
     icon: https://global-uploads.webflow.com/5a218ef7897bf400019e2f16/5a218ef7897bf400019e2f60_logo-graylog.png
     keywords:
@@ -42,12 +42,12 @@ entries:
   mariadb:
   - apiVersion: v1
     appVersion: 10.3.22
-    created: "2021-06-10T21:40:16.389598891Z"
+    created: "2021-06-16T14:53:52.772937518Z"
     description: Fast, reliable, scalable, and easy to use open-source relational
       database system. MariaDB Server is intended for mission-critical, heavy-load
       production systems as well as for embedding into mass-deployed software. Highly
       available MariaDB cluster.
-    digest: 04bb0b4fcb89f2f2fdcf384ee8d1a9ecf882828a0524ab15414abd1d16571511
+    digest: b11ffe5747f1de7b435490f36ac96245bd4442135f868349d1d6391b6b447511
     home: https://mariadb.org
     icon: file://../mariadb-stack-220x234.png
     keywords:
@@ -69,7 +69,7 @@ entries:
   rocketchat:
   - apiVersion: v1
     appVersion: 3.6.0
-    created: "2021-06-10T21:40:16.394821339Z"
+    created: "2021-06-16T14:53:52.777723019Z"
     dependencies:
     - condition: mongodb.enabled
       name: mongodb
@@ -78,7 +78,7 @@ entries:
     deprecated: true
     description: DEPRECATED - Prepare to take off with the ultimate chat platform,
       experience the next level of team communications
-    digest: 5bb2d9c2f590394c910ee5a1d7fb863a150dde32bb773fc22d68cc120ff56f67
+    digest: 027ff6e5ef0fa09a6cf48d6d90af6ab355a6da1687e5deee44e25b502715fa4a
     home: https://rocket.chat/
     icon: https://raw.githubusercontent.com/RocketChat/Rocket.Chat.Artwork/master/Logos/icon.svg
     keywords:
@@ -96,4 +96,40 @@ entries:
     urls:
     - https://dirkmueller.github.io/susehub-charts/rocketchat-2.0.10.tgz
     version: 2.0.10
-generated: "2021-06-10T21:40:16.380561409Z"
+  sysdig:
+  - annotations:
+      catalog.cattle.io/certified: partner
+      catalog.cattle.io/release-name: sysdig
+    apiVersion: v1
+    appVersion: 10.3.0
+    created: "2021-06-16T14:53:52.779338019Z"
+    description: Sysdig Monitor and Secure agent
+    digest: 013038ebac5985fcb9f81687227aa7da3feab8cb5f56ca69c01d3f6494072807
+    home: https://www.sysdig.com/
+    icon: https://478h5m1yrfsa3bbe262u7muv-wpengine.netdna-ssl.com/wp-content/uploads/2019/02/Shovel_600px.png
+    keywords:
+    - monitoring
+    - security
+    - alerting
+    - metric
+    - troubleshooting
+    - run-time
+    maintainers:
+    - email: lachlan@deis.com
+      name: lachie83
+    - email: jorge.salamero@sysdig.com
+      name: bencer
+    - email: nestor.salceda@sysdig.com
+      name: nestorsalceda
+    - email: alvaro.iradier@sysdig.com
+      name: airadier
+    - email: carlos.arilla@sysdig.com
+      name: carillan81
+    name: sysdig
+    sources:
+    - https://app.sysdigcloud.com/#/settings/user
+    - https://github.com/draios/sysdig
+    urls:
+    - https://dirkmueller.github.io/susehub-charts/sysdig-1.9.200.tgz
+    version: 1.9.200
+generated: "2021-06-16T14:53:52.756182315Z"
